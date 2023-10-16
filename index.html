@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Find your film</h1>
+            <a id="watchlistPageLink" href="./watchlist.html">My watchlist</a>
+        </header>
+        <div id="input-area">
+            <i class="fa fa-search"></i>
+            <input
+            id="search-input"
+            type="text"
+            placeholder="Search for a movie"
+            required
+            />
+            <button id="search-btn">Search</button>
+        </div>
+        <main>
+            <div id="search-results-container">
+                <img id="initial-img" src="images/Icon.png">
+                <p id="start">Start exploring</p>
+            </div>
+        </main>
+        <script src="index.js"></script>
+</body>
+</html>

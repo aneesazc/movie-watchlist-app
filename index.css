@@ -1,0 +1,256 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+header {
+    background: url("images/Header_background_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+main, .header-content, #search-bar {
+    width: 85%;
+    /* border: 1px red solid; */
+}
+
+a {
+  color: #ffffff;
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#input-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    margin: 180px auto;
+}
+
+#input-area i {
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #2E2E2F;
+}
+
+input {
+  width: 17.5rem;
+  border: none;
+  padding: 0.68rem 0 0.68rem 2.5625rem;
+  padding-left: 0;
+  background: #2E2E2F;
+  color: #A5A5A5;
+}
+
+button {
+  font-weight: 600;
+  color: white;
+  width: 7.5rem;
+  padding: 0.68rem;
+  background-color: #f9fafb;
+  border: solid 1px grey;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background: #4B4B4B;
+}
+
+
+#search-results-container,
+#watchlist-container {
+  margin: 2rem 2.75rem 0 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+#initial-img, #watchlist-container {
+    margin-top: 6rem;
+}
+
+#initial-img, #start{
+    margin-left: 5rem;
+    color: #2E2E2F;
+}
+
+.bad-search {
+    margin-top: 6rem;
+    color: #787878;
+}
+
+
+/* CSS for #search-results-container and its child elements */
+
+#search-results-container {
+    color: white;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* This styles the initial image and text when no movies have been searched yet */
+.initial-img, .start {
+    margin: 2rem 0;
+}
+
+.initial-img {
+    width: 100px;  /* Adjust this to your desired size */
+}
+
+.start {
+    font-size: 1.5rem;
+    color: #2E2E2F;
+}
+
+.bad-search {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #787878;
+}
+
+#search-results-container{
+    color: white;
+    margin: 2rem auto; /* auto margins to center the container */
+    width: 400px; /* adjust this as you see fit; this sets the width of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 100%; /* take up the full width of the parent container */
+    display: flex;
+    border-bottom: 1px solid #2E2E2F;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+#poster {
+    max-width: 100px; /* Adjust to your liking */
+    max-height: 150px;
+    object-fit: cover;
+    margin-right: 0.5rem;
+}
+
+.card-text {
+    flex-grow: 1;  /* Allows it to take up remaining space */
+}
+
+.card-header, .card-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 0.5rem;
+    width: 24px; 
+    height: 24px; 
+}
+
+.movie-dur, .movie-genre, .movie-desc {
+    margin: 0.5rem 0;
+}
+
+.movie-desc {
+    width: 100%;
+    text-align: justify; /* Ensures text is spread evenly */
+    color: #A5A5A5;;
+}
+
+.card .p2,
+.card .movie-dur,
+.card .movie-genre,
+.card .movie-desc {
+    font-size: 0.8rem;  /* Adjust this value as per your preference */
+}
+
+.card .movie-title {
+    /* Retaining the original size or adjust as needed */
+    font-size: 1rem;
+}
+
+.watchlist {
+    cursor: pointer;
+}
+
+#watchlist-container {
+    width: 400px;
+    margin: 0 auto; /* This centers the container */
+}
+
+#search-btn{
+    cursor: pointer;
+}
+
+#watchlist-container h3{
+    margin-top: 10rem;
+    color: #787878;
+}
+
+.card p{
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+#search-results-container, .card{
+    border: 1px sloid white;
+}
+
+#search-results-container, #watchlist-container {
+    color: white;
+    margin: 2rem auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    border-bottom: 1px solid #2E2E2F;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+
+@media (min-width: 720px){
+    #search-results-container, #watchlist-container {
+        width: 60%;
+    }
+    .card {
+        margin-left: 7rem;
+    }
+}
